@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>TODO List</title>
+  </head>
+  <body>
+    <div class="my-todos">
+      <h1 class="title">My toDo list</h1>
+      <div class="input-group">
+        <input id="taskName" type="text" placeholder="Add ToDo..." />
+        <button id="addBtn" class="addBtn">Add</button>
+      </div>
+    </div>
+    <ul class="todo-list">
+      <li><span>Task1</span><i class="fa-solid fa-trash-can"></i></li>
+      <li>
+        <span class="completed">Task2</span
+        ><i class="fa-solid fa-trash-can"></i>
+      </li>
+    </ul>
+    <script src="js/script.js"></script>
+  </body>
+</html>
