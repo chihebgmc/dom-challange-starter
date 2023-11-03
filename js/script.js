@@ -45,9 +45,31 @@ function handleAddClick(e) {
 
     // Append span and trash icon to list item
     li.append(span, i);
-    console.log(li);
+    // console.log(li);
 
     // Append li element <li> to todoList element <ul>
     todoList[0].appendChild(li);
+
+    // Add event listner to span element (task)
+    span.addEventListener('click', function (e) {
+      // If completed class exists remove it, else add it.
+      // if (e.target.className.includes('completed')) {
+      //   e.target.classList.remove('completed');
+      // } else {
+      //   e.target.classList.add('completed');
+      // }
+      e.target.classList.toggle('completed');
+      console.log(e.target.nextElementSibling);
+    });
+
+    // Add event listener to trash icon
+    i.addEventListener('click', function (e) {
+      // li.remove();
+      e.target.parentElement.remove();
+      console.log(e.target.previousElementSibling);
+    });
+
+    // Clear the field
+    inputField.value = '';
   }
 }
